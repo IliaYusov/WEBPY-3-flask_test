@@ -1,0 +1,60 @@
+@email = som@mail.ru
+@password = secretpasswordsam123
+
+###
+
+# получение пользователя
+GET http://127.0.0.1:5000/users/9
+Content-Type: application/json
+
+###
+
+# получение объявления
+GET http://127.0.0.1:5000/adverts/2
+Content-Type: application/json
+
+###
+
+# создание пользователя
+POST http://127.0.0.1:5000/users/
+Content-Type: application/json
+
+{
+  "username": "Som",
+  "email": "som@maifklgkddfgmdl.ru",
+  "password": "secretpasswordsam123"
+}
+
+###
+
+# создание объявления
+POST http://127.0.0.1:5000/adverts/
+Content-Type: application/json
+Authorization: Basic {{email}} {{password}}
+
+{
+  "title": "new title 34",
+  "text": "lorem ipsum",
+  "user_id": 6
+}
+
+###
+
+# удаление заказа
+DELETE http://127.0.0.1:5000/adverts/13
+Content-Type: application/json
+Authorization: Basic {{email}} {{password}}
+
+###
+
+# запрос на рассылку
+POST http://127.0.0.1:5000/emails/
+Content-Type: application/json
+
+###
+
+# запрос результата таска
+GET http://127.0.0.1:5000/emails/b07058f0-bd2a-4550-bbe4-e9b2896e429d
+Content-Type: application/json
+
+###

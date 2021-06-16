@@ -1,0 +1,13 @@
+flask~=1.1.2
+flask-sqlalchemy~=2.5.1
+flask-migrate~=2.7.0
+psycopg2~=2.8.6
+jsonify~=0.5
+flask-httpauth~=4.2.0
+
+SQLAlchemy~=1.4.11
+alembic~=1.5.8
+jsonschema~=3.2.0
+validator~=0.7.0
+celery~=4.3.0
+gevent~=21.1.2
